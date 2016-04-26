@@ -1,0 +1,4189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1374</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Akilli Kart Entegrasyon</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="a.qrc">
+    <normaloff>:/w/rfid-icon.png</normaloff>:/w/rfid-icon.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0 rgba(255, 255, 255, 255), stop:0.1 rgba(255, 255, 255, 255), stop:0.2 rgba(180, 176, 255, 167), stop:0.3 rgba(180, 151, 255, 92), stop:0.4 rgba(180, 125, 255, 51), stop:0.5 rgba(180, 76, 255, 205), stop:0.52 rgba(180, 76, 255, 205), stop:0.6 rgba(180, 180, 255, 84), stop:1 rgba(255, 255, 255, 152));</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>36</width>
+    <height>36</height>
+   </size>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>2</y>
+      <width>1031</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(242, 255, 248);
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="icon">
+      <iconset resource="a.qrc">
+       <normaloff>:/w/plan.png</normaloff>:/w/plan.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>YERLEŞİM PLANI</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1021</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+color: rgb(0, 170, 255);</string>
+      </property>
+      <property name="title">
+       <string>Plan</string>
+      </property>
+      <widget class="Line" name="line_32">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>399</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_007">
+       <property name="geometry">
+        <rect>
+         <x>383</x>
+         <y>249</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>363</x>
+         <y>266</y>
+         <width>381</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_001">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>470</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_24">
+       <property name="geometry">
+        <rect>
+         <x>253</x>
+         <y>388</y>
+         <width>16</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_47">
+       <property name="geometry">
+        <rect>
+         <x>688</x>
+         <y>226</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_012">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>180</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_20">
+       <property name="geometry">
+        <rect>
+         <x>733</x>
+         <y>541</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_41">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>220</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_33">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>452</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>470</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>KALİTE</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_28">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>120</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_36">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>300</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>370</y>
+         <width>121</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ÜRETİM HOLÜ</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_14">
+       <property name="geometry">
+        <rect>
+         <x>1009</x>
+         <y>40</y>
+         <width>16</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_48">
+       <property name="geometry">
+        <rect>
+         <x>832</x>
+         <y>37</y>
+         <width>20</width>
+         <height>241</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>160</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>DEPO</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_23">
+       <property name="geometry">
+        <rect>
+         <x>373</x>
+         <y>400</y>
+         <width>20</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_26">
+       <property name="geometry">
+        <rect>
+         <x>273</x>
+         <y>264</y>
+         <width>91</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_43">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>159</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>5</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_25">
+       <property name="geometry">
+        <rect>
+         <x>263</x>
+         <y>131</y>
+         <width>20</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_006">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>450</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>53</x>
+         <y>339</y>
+         <width>20</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>5</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>173</x>
+         <y>11</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>AGS</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_009">
+       <property name="geometry">
+        <rect>
+         <x>490</x>
+         <y>250</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_39">
+       <property name="geometry">
+        <rect>
+         <x>543</x>
+         <y>41</y>
+         <width>16</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_15">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>220</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_49">
+       <property name="geometry">
+        <rect>
+         <x>831</x>
+         <y>387</y>
+         <width>16</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_50">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>33</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_004">
+       <property name="geometry">
+        <rect>
+         <x>293</x>
+         <y>29</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_18">
+       <property name="geometry">
+        <rect>
+         <x>990</x>
+         <y>340</y>
+         <width>20</width>
+         <height>191</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>320</y>
+         <width>161</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>ÜRETİM KORİDOR</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_010">
+       <property name="geometry">
+        <rect>
+         <x>563</x>
+         <y>370</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>300</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>120</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>RADAR &amp; AGS</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_37">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>353</x>
+         <y>186</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_19">
+       <property name="geometry">
+        <rect>
+         <x>930</x>
+         <y>330</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_16">
+       <property name="geometry">
+        <rect>
+         <x>920</x>
+         <y>226</y>
+         <width>20</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_21">
+       <property name="geometry">
+        <rect>
+         <x>839</x>
+         <y>530</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_42">
+       <property name="geometry">
+        <rect>
+         <x>663</x>
+         <y>391</y>
+         <width>20</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_013">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>370</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>133</x>
+         <y>41</y>
+         <width>16</width>
+         <height>261</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_10">
+       <property name="geometry">
+        <rect>
+         <x>700</x>
+         <y>40</y>
+         <width>20</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_002">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>310</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_011">
+       <property name="geometry">
+        <rect>
+         <x>630</x>
+         <y>250</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>63</x>
+         <y>539</y>
+         <width>671</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>671</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>460</y>
+         <width>20</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>10</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 10pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>A
+R
+G
+E</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>433</x>
+         <y>142</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>PROJE</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_005">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>250</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>336</y>
+         <width>20</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>12</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 12pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>K
+A
+L
+İ
+T
+E</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>190</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>AGS</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_008">
+       <property name="geometry">
+        <rect>
+         <x>360</x>
+         <y>500</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>143</x>
+         <y>33</y>
+         <width>221</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_11">
+       <property name="geometry">
+        <rect>
+         <x>690</x>
+         <y>220</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>130</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>4.DERECE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>70</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>İDARİ BİRİMLER</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_003">
+       <property name="geometry">
+        <rect>
+         <x>173</x>
+         <y>29</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>283</x>
+         <y>11</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>RADAR</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>450</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>KABLAJ</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_22">
+       <property name="geometry">
+        <rect>
+         <x>263</x>
+         <y>382</y>
+         <width>571</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_6">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>353</x>
+         <y>41</y>
+         <width>20</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_12">
+       <property name="geometry">
+        <rect>
+         <x>843</x>
+         <y>31</y>
+         <width>171</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_38">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>448</x>
+         <y>195</y>
+         <width>16</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_46">
+       <property name="geometry">
+        <rect>
+         <x>743</x>
+         <y>391</y>
+         <width>20</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_9">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>364</x>
+         <y>31</y>
+         <width>381</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>470</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>15</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 15pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>KABLAJ</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_40">
+       <property name="geometry">
+        <rect>
+         <x>611</x>
+         <y>226</y>
+         <width>16</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>678</x>
+         <y>440</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>11</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(85, 140, 155);
+font: 75 11pt &quot;Consolas&quot;;</string>
+       </property>
+       <property name="text">
+        <string>GÜV. ODA</string>
+       </property>
+      </widget>
+      <widget class="Line" name="line_29">
+       <property name="geometry">
+        <rect>
+         <x>710</x>
+         <y>120</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_51">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>241</x>
+         <y>14</y>
+         <width>20</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_camera">
+       <property name="geometry">
+        <rect>
+         <x>720</x>
+         <y>310</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>ÜRETİM KORİDORU</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_guv_oda">
+       <property name="geometry">
+        <rect>
+         <x>699</x>
+         <y>480</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>GÜVENLİKLİ ODA</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_kablo3">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>395</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>KABLO-3</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_kablo2">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>400</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>KABLO-2</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-sag.png</normaloff>:/w/Security-sag.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_kablo1">
+       <property name="geometry">
+        <rect>
+         <x>385</x>
+         <y>496</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>KABLO-1</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-sag.png</normaloff>:/w/Security-sag.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_kablaj_kalite">
+       <property name="geometry">
+        <rect>
+         <x>261</x>
+         <y>498</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>KABLAJ-KALİTE</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-sag.png</normaloff>:/w/Security-sag.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_uretim1">
+       <property name="geometry">
+        <rect>
+         <x>209</x>
+         <y>498</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>ÜRETİM-1</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_depo1">
+       <property name="geometry">
+        <rect>
+         <x>86</x>
+         <y>263</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>DEPO-1</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_depo2">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>150</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_idari1">
+       <property name="geometry">
+        <rect>
+         <x>880</x>
+         <y>480</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>İDARİ-1</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_idari2">
+       <property name="geometry">
+        <rect>
+         <x>940</x>
+         <y>100</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>İDARİ-2</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_lab">
+       <property name="geometry">
+        <rect>
+         <x>655</x>
+         <y>49</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>4NCÜ DERECE</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_uretim2">
+       <property name="geometry">
+        <rect>
+         <x>138</x>
+         <y>57</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>ÜRETİM-2</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-sag.png</normaloff>:/w/Security-sag.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_giris">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>393</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>GİRİŞ</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="Line" name="line_13">
+       <property name="geometry">
+        <rect>
+         <x>753</x>
+         <y>480</y>
+         <width>61</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_52">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>40</y>
+         <width>20</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_17">
+       <property name="geometry">
+        <rect>
+         <x>753</x>
+         <y>120</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_cay">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>80</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>ÜRETİM KORİDORU</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_turnike">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>500</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>GİRİŞ</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-Camera-icon.png</normaloff>:/w/Security-Camera-icon.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_014">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>530</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="RFID_015">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>130</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-radius: 10px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/292.png</normaloff>:/w/292.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+       <property name="default">
+        <bool>true</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="Line" name="line_53">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>10</y>
+         <width>20</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_44">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>542</y>
+         <width>61</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="lineWidth">
+        <number>4</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_kose">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>10</y>
+         <width>51</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>ÜRETİM-2</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="a.qrc">
+         <normaloff>:/w/Security-sag.png</normaloff>:/w/Security-sag.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>32</width>
+         <height>32</height>
+        </size>
+       </property>
+      </widget>
+      <zorder>btn_uretim1</zorder>
+      <zorder>btn_kablaj_kalite</zorder>
+      <zorder>btn_kablo1</zorder>
+      <zorder>line_32</zorder>
+      <zorder>line_20</zorder>
+      <zorder>line</zorder>
+      <zorder>line_36</zorder>
+      <zorder>label_3</zorder>
+      <zorder>label_4</zorder>
+      <zorder>label_5</zorder>
+      <zorder>line_2</zorder>
+      <zorder>line_10</zorder>
+      <zorder>RFID_012</zorder>
+      <zorder>label_10</zorder>
+      <zorder>label</zorder>
+      <zorder>line_14</zorder>
+      <zorder>line_48</zorder>
+      <zorder>line_23</zorder>
+      <zorder>line_43</zorder>
+      <zorder>line_50</zorder>
+      <zorder>line_3</zorder>
+      <zorder>label_32</zorder>
+      <zorder>line_37</zorder>
+      <zorder>line_16</zorder>
+      <zorder>RFID_002</zorder>
+      <zorder>label_15</zorder>
+      <zorder>label_6</zorder>
+      <zorder>RFID_008</zorder>
+      <zorder>label_8</zorder>
+      <zorder>label_24</zorder>
+      <zorder>label_9</zorder>
+      <zorder>line_12</zorder>
+      <zorder>line_38</zorder>
+      <zorder>line_9</zorder>
+      <zorder>label_7</zorder>
+      <zorder>label_26</zorder>
+      <zorder>label_28</zorder>
+      <zorder>RFID_001</zorder>
+      <zorder>line_33</zorder>
+      <zorder>line_29</zorder>
+      <zorder>line_51</zorder>
+      <zorder>label_2</zorder>
+      <zorder>line_5</zorder>
+      <zorder>RFID_004</zorder>
+      <zorder>line_28</zorder>
+      <zorder>line_15</zorder>
+      <zorder>line_19</zorder>
+      <zorder>line_18</zorder>
+      <zorder>line_41</zorder>
+      <zorder>line_46</zorder>
+      <zorder>line_25</zorder>
+      <zorder>line_6</zorder>
+      <zorder>line_26</zorder>
+      <zorder>RFID_005</zorder>
+      <zorder>line_40</zorder>
+      <zorder>line_49</zorder>
+      <zorder>line_39</zorder>
+      <zorder>line_7</zorder>
+      <zorder>RFID_007</zorder>
+      <zorder>RFID_009</zorder>
+      <zorder>RFID_011</zorder>
+      <zorder>btn_camera</zorder>
+      <zorder>btn_guv_oda</zorder>
+      <zorder>btn_kablo3</zorder>
+      <zorder>line_42</zorder>
+      <zorder>label_33</zorder>
+      <zorder>btn_kablo2</zorder>
+      <zorder>line_24</zorder>
+      <zorder>RFID_006</zorder>
+      <zorder>btn_depo1</zorder>
+      <zorder>btn_depo2</zorder>
+      <zorder>btn_idari1</zorder>
+      <zorder>btn_idari2</zorder>
+      <zorder>btn_lab</zorder>
+      <zorder>btn_uretim2</zorder>
+      <zorder>line_4</zorder>
+      <zorder>RFID_003</zorder>
+      <zorder>line_22</zorder>
+      <zorder>RFID_010</zorder>
+      <zorder>RFID_013</zorder>
+      <zorder>btn_giris</zorder>
+      <zorder>line_13</zorder>
+      <zorder>line_52</zorder>
+      <zorder>line_17</zorder>
+      <zorder>btn_cay</zorder>
+      <zorder>btn_turnike</zorder>
+      <zorder>RFID_014</zorder>
+      <zorder>RFID_015</zorder>
+      <zorder>line_21</zorder>
+      <zorder>line_53</zorder>
+      <zorder>line_44</zorder>
+      <zorder>line_47</zorder>
+      <zorder>line_11</zorder>
+      <zorder>btn_kose</zorder>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="icon">
+      <iconset resource="a.qrc">
+       <normaloff>:/w/pers.png</normaloff>:/w/pers.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>KAYITLAR</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
+        <height>511</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_ara">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>200</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="a.qrc">
+        <normaloff>:/w/Database-Search.png</normaloff>:/w/Database-Search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>52</width>
+        <height>52</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>30</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(203, 220, 201);</string>
+      </property>
+      <property name="title">
+       <string>Kolon</string>
+      </property>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>110</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(203, 220, 201);</string>
+      </property>
+      <property name="title">
+       <string>Değer</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_6">
+     <attribute name="icon">
+      <iconset resource="a.qrc">
+       <normaloff>:/w/stats.png</normaloff>:/w/stats.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>İSTATİSTİK</string>
+     </attribute>
+     <widget class="PlotWidget" name="plot">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
+        <height>511</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5"/>
+     </widget>
+     <widget class="QPushButton" name="btn_stats">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>200</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="a.qrc">
+        <normaloff>:/w/Database-Search.png</normaloff>:/w/Database-Search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>52</width>
+        <height>52</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_16">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>30</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(203, 220, 201);</string>
+      </property>
+      <property name="title">
+       <string>Personel</string>
+      </property>
+      <widget class="QComboBox" name="stats_combo">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="icon">
+      <iconset resource="a.qrc">
+       <normaloff>:/w/match.png</normaloff>:/w/match.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>EŞLEŞMELER</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_iptal">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>300</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Öncelikle &quot;idd&quot; kolonundan hücre seçiniz, ardından silme işlemini deneyiniz.</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="a.qrc">
+        <normaloff>:/w/minus.png</normaloff>:/w/minus.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>48</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>390</y>
+        <width>32</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>____</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>390</y>
+        <width>17</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Id:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_eslesme_ara">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>200</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="a.qrc">
+        <normaloff>:/w/Database-Search.png</normaloff>:/w/Database-Search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>52</width>
+        <height>52</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>30</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="title">
+       <string>Kolon</string>
+      </property>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>110</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="title">
+       <string>Değer</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="icon">
+      <iconset resource="a.qrc">
+       <normaloff>:/w/video-512.png</normaloff>:/w/video-512.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>KAMERALAR</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
+        <height>511</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>30</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="title">
+       <string>Kolon</string>
+      </property>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>110</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="title">
+       <string>Değer</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btn_kamera_ara">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>200</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="a.qrc">
+        <normaloff>:/w/Database-Search.png</normaloff>:/w/Database-Search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>52</width>
+        <height>52</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="icon">
+      <iconset resource="a.qrc">
+       <normaloff>:/w/rf.png</normaloff>:/w/rf.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>RFID OKUYUCULAR</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
+        <height>511</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_rfid_ara">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>200</y>
+        <width>181</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="a.qrc">
+        <normaloff>:/w/Database-Search.png</normaloff>:/w/Database-Search.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>52</width>
+        <height>52</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>110</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="title">
+       <string>Değer</string>
+      </property>
+      <widget class="QLineEdit" name="lineEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_10">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>30</y>
+        <width>181</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Calibri&quot;;
+background-color: rgb(170, 255, 127);</string>
+      </property>
+      <property name="title">
+       <string>Kolon</string>
+      </property>
+      <widget class="QComboBox" name="comboBox_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>141</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 12pt &quot;Calibri&quot;;</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>657</y>
+      <width>211</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>243</red>
+          <green>255</green>
+          <blue>251</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(243, 255, 251);</string>
+    </property>
+    <property name="title">
+     <string>Aygıtlar</string>
+    </property>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>48</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Kamera</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>17</x>
+       <y>23</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="a.qrc">:/w/Security-sag.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>57</x>
+       <y>48</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RFID Okuyucu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>74</x>
+       <y>20</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="a.qrc">:/w/292.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>136</x>
+       <y>48</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Seçili Okuyucu</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>22</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="a.qrc">:/w/target_red2.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>label_27</zorder>
+    <zorder>label_25</zorder>
+    <zorder>label_34</zorder>
+    <zorder>label_29</zorder>
+    <zorder>label_36</zorder>
+    <zorder>label_37</zorder>
+   </widget>
+   <widget class="QPushButton" name="btn_exit">
+    <property name="geometry">
+     <rect>
+      <x>955</x>
+      <y>657</y>
+      <width>75</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="a.qrc">
+      <normaloff>:/w/exit.png</normaloff>:/w/exit.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>48</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_11">
+    <property name="geometry">
+     <rect>
+      <x>1034</x>
+      <y>32</y>
+      <width>331</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 170, 255);</string>
+    </property>
+    <property name="title">
+     <string>Akış</string>
+    </property>
+    <widget class="QFrame" name="frame">
+     <property name="geometry">
+      <rect>
+       <x>4</x>
+       <y>20</y>
+       <width>321</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_12">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>440</y>
+      <width>326</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(233, 255, 255);
+</string>
+    </property>
+    <property name="title">
+     <string>İzleme</string>
+    </property>
+    <widget class="QPushButton" name="btn_izle">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+       <weight>9</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75  12pt &quot;Calibri&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(208, 205, 203);</string>
+     </property>
+     <property name="text">
+      <string>İZLE</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>123</x>
+       <y>66</y>
+       <width>201</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QComboBox" name="cmb_personel">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cmb_bolum">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>&lt;BölümSeçiniz&gt;</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bilgi İşlem</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Satın Alma</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>İş Geliştirme</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Radar</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AGS</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ar-Ge</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Depo</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cmb_kamera">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>&lt;Kamera Seçiniz&gt;</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Üretim Koridor</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Güvenlikli Oda</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Üretim Holü</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Depo</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Giriş</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>İdari Birimler</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cmb_okuyucu">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>&lt;Okuyucu Seçiniz&gt;</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_001</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_002</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_003</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_004</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_005</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_006</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_007</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_008</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>RFID_009</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cmb_ziyaretci">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>&lt;Ziyaretçi Seçiniz&gt;</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ziyaretçi-1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ziyaretçi-2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ziraretçi-3</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>35</y>
+       <width>91</width>
+       <height>183</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="radio_hepsi">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Hepsi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radio_personel">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Personel</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radio_bolum">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Bölüm</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radio_kamera">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Kamera</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radio_okuyucu">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Okuyucu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radio_ziyaretci">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Ziyaretçi</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_14">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>215</y>
+       <width>221</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>10</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 170, 255);</string>
+     </property>
+     <property name="title">
+      <string>İzlemede</string>
+     </property>
+     <widget class="QLabel" name="lbl_izlenen">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>20</y>
+        <width>211</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Calibri</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(155, 185,180);
+color: rgb(10, 15, 255);</string>
+      </property>
+      <property name="text">
+       <string>&lt;İzleme  Eklenmedi&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_13">
+    <property name="geometry">
+     <rect>
+      <x>1035</x>
+      <y>310</y>
+      <width>331</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>170</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>120</red>
+          <green>120</green>
+          <blue>120</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>233</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(233, 255, 255);
+QLabel { background-color : red; color : blue; }
+
+</string>
+    </property>
+    <property name="title">
+     <string>Yakalanan</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>20</y>
+       <width>201</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="lbl_canli_kisi">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_canli_okuyucu">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_canli_kamera">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lbl_canli_zaman">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>91</width>
+       <height>92</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Kişi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);
+background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Okuyucu</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_14">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);
+background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Kamera</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_16">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(170, 255, 127);
+background-color: rgb(203, 220, 201);</string>
+        </property>
+        <property name="text">
+         <string>Zaman </string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lbl_durum">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>685</y>
+      <width>221</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(188, 240, 255);</string>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1374</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHarita_Yukle">
+    <property name="title">
+     <string>Plan</string>
+    </property>
+    <addaction name="actionYukle"/>
+   </widget>
+   <addaction name="menuHarita_Yukle"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionYukle">
+   <property name="text">
+    <string>Yükle</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="a.qrc"/>
+ </resources>
+ <connections/>
+</ui>

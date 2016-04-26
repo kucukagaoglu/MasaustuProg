@@ -1,0 +1,33 @@
+<RCC>
+  <qresource prefix="w">
+    <file>Security_Reader1.png</file>
+    <file>cancel.png</file>
+    <file>CulpepperJobMatchingIcon.png</file>
+    <file>Database-Search.png</file>
+    <file>htr_.jpg</file>
+    <file>match.png</file>
+    <file>cam.png</file>
+    <file>plann.png</file>
+    <file>pers.png</file>
+    <file>stats.png</file>
+    <file>exit.png</file>
+    <file>save.png</file>
+    <file>video-512.png</file>
+    <file>search-group.png</file>
+    <file>plan.png</file>
+    <file>map2.png</file>
+    <file>plann.png</file>
+    <file>rf.png</file>
+    <file>Navigate-right-icon.png</file>
+    <file>sol.png</file>
+    <file>htr_.jpg</file>
+    <file>yellow.png</file>
+    <file>Search.png</file>
+    <file>292.png</file>
+    <file>target_red2.png</file>
+    <file>minus.png</file>
+    <file>rfid-icon.png</file>
+    <file>Security-Camera-icon.png</file>
+    <file>Security-sag.png</file>
+  </qresource>
+</RCC>
